@@ -1,0 +1,5 @@
+<p>xmas-tree works!</p>
+<label>Pls define number of tree height (=rows):</label>
+<input [(ngModel)]="enteredRows" type="number">
+<button (click)="generateTree()">Generate rows</button>
+<p class="xmas-tree" *ngFor="let row of createdTree">{{ row }}</p>
